@@ -1,0 +1,34 @@
+Exercise 1 Introduced us to GitHub and we made our account. We also configured MobaXTerm for git config
+Exercise 2 Introduced us to repositories, and how to move files to the staging area before committing.
+Exercise 3 Introduced us to remote repositories and how to "push" to them.
+  *Note the exercise instructions did not work due to GitHub removing HTTP password authentication.
+  *As a workaround I created a token and found success pushing with the following commands
+  *git remote add origin https://<GITHUB_ACCESS_TOKEN>@github.com/<GITHUB_USERNAME>/<REPOSITORY_NAME>.git
+  *git push origin master https://<GITHUB_ACCESS_TOKEN>@github.com/<GITHUB_USERNAME>/<REPOSITORY_NAME>.git
+  *It took a lot of googling but was very satisfying to see work.
+Exercise 4 introduced branches and how our git work file is structured.
+  *This part was the hardest to visualize but the YouTube video did a great job.
+  *At the end I received the message when running git diff master..2ndfavorite
+
+diff --git a/readme.md b/readme.md
+index e47f952..4cfb775 100644
+--- a/readme.md
++++ b/readme.md
+@@ -1,4 +1,9 @@
+-You might belong in Hufflepuff,M
+-Where they are just and loyal,M
+-Those patient Hufflepuffs are trueM
+-And unafraid of toil;M
++Or yet in wise old Ravenclaw,M
++if you've a ready mind,M
++Where those of wit and learning,M
++Will always find their kind;M
++M
++Or perhaps in SlytherinM
++You'll make your real friends,M
++Those cunning folks use any meansM
++To achieve their ends.M
+
+  *This results helps visualize the effect of branching and how master when pulled is saved but the branches are not.
+  *This lesson was very useful and helped clarify many GitHub questions.
+  *Update the push portion and the lesson will be perfect!
